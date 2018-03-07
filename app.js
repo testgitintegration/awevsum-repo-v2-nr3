@@ -10,6 +10,8 @@ var githubDelegator = require('./controllers/githubDelegator');
 var helmet = require('helmet');
 app.use(helmet());
 
+//toooodiillloooooo
+
 var username = 'testgitintegration';
 var password = 'thisgoodoldpassislikeanpop37';
 var auth = 'Basic ' + Buffer.from(username + ':' + password).toString('base64');
@@ -28,8 +30,8 @@ res.send("nattannatanted");
 
 app.get('/initclientthroughcred', function(req, res) {
   var client = github.client({
-    username: 'testgitintegration',
-    password: 'thisgoodoldpassislikeanpop37'
+    username: process.env.GIT_USER,
+    password: process.env.GIT_PASS
   });
 
   client.get('/user', {}, function (err, status, body, headers) {
