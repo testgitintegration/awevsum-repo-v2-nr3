@@ -12,8 +12,8 @@ app.use(helmet());
 
 //toooodiillloooooo
 
-var username = 'testgitintegration';
-var password = 'thisgoodoldpassislikeanpop37';
+var username = process.env.GIT_USER;
+var password = process.env.GIT_PASS;
 var auth = 'Basic ' + Buffer.from(username + ':' + password).toString('base64');
 var ghme;
 
