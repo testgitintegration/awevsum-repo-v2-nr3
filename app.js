@@ -55,7 +55,7 @@ app.get('/initfirstrepo', function(req, res, next) {
     //https://github.com/lightraysio/basiclocalauthentication.git
   }
   function callback2(){
-    console.log('the flow must go on!!!! the flow must go on!!');
+    console.log('the flow must go on!!!! the flow must go on!!!');
   }
 
 });
