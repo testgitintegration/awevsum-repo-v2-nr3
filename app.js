@@ -104,7 +104,7 @@ app.use(errorHandler)
 
 function logErrors (err, req, res, next) {
   //console.error(err.stack)
-  console.log("caught an error");
+  console.log("caught an erroor");
   console.log(err.stack)
   next(err)
 }
